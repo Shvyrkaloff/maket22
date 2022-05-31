@@ -1,0 +1,73 @@
+﻿<Window x:Class="maket22.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:maket22"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="grid1" Background="#eee">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="39*"/>
+            <RowDefinition Height="343*"/>
+            <RowDefinition Height="37*"/>
+        </Grid.RowDefinitions>
+        <Border x:Name="border1"  BorderBrush="Black" BorderThickness="2" Margin="10,10,10,5" VerticalAlignment="Center">
+            <StackPanel  Grid.Row="0">
+                <Grid x:Name="tool" Background="White" HorizontalAlignment="Stretch">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20*"/>
+                        <ColumnDefinition Width="20*"/>
+                        <ColumnDefinition Width="20*"/>
+                        <ColumnDefinition Width="20*"/>
+                        <ColumnDefinition Width="20*"/>
+                        <ColumnDefinition Width="20*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="b1" Content="Каталог товаров" Grid.Column="0" Background="White" Click="Button_Click_10" MouseEnter="hover1"></Button>
+                    <Button x:Name="b2" Content="Об аптеке" Grid.Column="1" Background="White" Click="Button_Click" MouseEnter="hover2"></Button>
+                    <Button x:Name="b3" Content="Медицинские статьи" Grid.Column="2" Background="White" Click="Button_Click_1" MouseEnter="hover3"></Button>
+                    <Button x:Name="b4" Content="Как нас найти" Grid.Column="3" Background="White" Click="Button_Click_2" MouseEnter="hover4"></Button>
+                    <RadioButton x:Name="b5" Content="Светлая тема" Grid.Column="4" HorizontalAlignment="Center" Checked="RadioButton_Checked" MouseEnter="hover5" />
+                    <RadioButton x:Name="b6" Content="Pride" Grid.Column="5" HorizontalAlignment="Center" Checked="RadioButton_Checked_1" MouseEnter="hover6" />
+                </Grid>
+            </StackPanel>
+        </Border>
+        <Border x:Name="border2" Grid.Row="1"  BorderBrush="Black" BorderThickness="2" Margin="10,10,10,5">
+            <Grid x:Name="grid3" Background="White" HorizontalAlignment="Stretch">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="25*"/>
+                    <ColumnDefinition Width="75*"/>
+                </Grid.ColumnDefinitions>
+                <Border x:Name="border5"  BorderBrush="Black" BorderThickness="2" Margin="10,10,10,5">
+                    <StackPanel Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                        <Grid x:Name="grid2" Background="White" Margin="0" Height="306">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="38*"/>
+                                <RowDefinition Height="38*"/>
+                                <RowDefinition Height="38*"/>
+                                <RowDefinition Height="39*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Image  Grid.Row="0" Source="https://cdn.eapteka.ru/upload/offer_photo/332/878/1_c56a37ecb400287490228765493e6ff9.jpeg?t=1594889359&amp;_cvc=1653997965" VerticalAlignment="Stretch" Stretch="Fill" HorizontalAlignment="Stretch" StretchDirection="Both" Margin="25,5,10,5"/>
+                            <Image  Grid.Row="1" Source="https://cdn.eapteka.ru/upload/offer_photo/212/974/1.jpeg?t=1585912412&amp;_cvc=1653997965" VerticalAlignment="Stretch" Stretch="Fill" HorizontalAlignment="Stretch" StretchDirection="Both" Margin="25,5,10,5"/>
+                            <Image  Grid.Row="2" Source="https://cdn.eapteka.ru/upload/offer_photo/350/30/1_0e0b76b09c3c37fa89c6faaf9049e320.png?t=1634118585&amp;_cvc=1653997965" VerticalAlignment="Stretch" Stretch="Fill" HorizontalAlignment="Stretch" StretchDirection="Both" Margin="25,5,10,5"/>
+                            <Image  Grid.Row="3" Source="https://avatars.mds.yandex.net/get-zen_doc/1857554/pub_5ee7c35c1c38310990ef695a_5ee7c39f0b8d354e0dafd221/scale_1200" VerticalAlignment="Stretch" Stretch="Fill" HorizontalAlignment="Stretch" StretchDirection="Both" Margin="25,5,10,5"/>
+                        </Grid>
+                    </StackPanel>
+                </Border>
+                <Border x:Name="border3" Grid.Column="1" BorderBrush="Black" BorderThickness="2" Margin="10,10,10,5">
+                    <TextBlock x:Name="text1" TextWrapping="Wrap" Text="Апте́ка (апоте́ка[1], оптека[1]) (от греч. ἀποθήκη[2] — «склад») — особая специализированная организация системы здравоохранения, занимающаяся изготовлением, фасовкой, анализом и продажей лекарственных средств. Аптеку традиционно рассматривают как учреждение здравоохранения, а её деятельность формулируют как «оказание фармацевтической помощи населению». Фармацевтическая помощь включает в себя процедуру консультирования врача и пациента с целью определения наиболее эффективного, безопасного и экономически оправданного курса лечения"/>
+                </Border>
+            </Grid>
+        </Border>
+        <Border x:Name="border4" Grid.Row="2"  BorderBrush="Black" BorderThickness="2" Margin="10,10,10,5">
+            <StackPanel Grid.Row="2">
+                <StatusBar x:Name="status" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                    <TextBlock x:Name= "Change"/>
+                </StatusBar>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
